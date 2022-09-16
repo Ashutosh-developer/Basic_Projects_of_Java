@@ -138,6 +138,15 @@ public class TicTacToe implements ActionListener{
             ){
                 xwins(2, 5, 8);
             }
+
+            if(
+            (buttons[0].getText()=="X")&&
+            (buttons[4].getText()=="X")&&
+            (buttons[8].getText()=="X")
+            ){
+                xwins(0, 4, 8);
+            }
+
             if(
             (buttons[2].getText()=="X")&&
             (buttons[4].getText()=="X")&&
@@ -210,7 +219,7 @@ public class TicTacToe implements ActionListener{
             buttons[b].setBackground(Color.GREEN);
             buttons[c].setBackground(Color.GREEN);
 
-            for(int i = 0; i<0; i++){
+            for(int i = 0; i<9; i++){
                 buttons[i].setEnabled(false);
             }
             textfield.setText("X wins");
@@ -221,7 +230,7 @@ public class TicTacToe implements ActionListener{
             buttons[b].setBackground(Color.GREEN);
             buttons[c].setBackground(Color.GREEN);
 
-            for(int i = 0; i<0; i++){
+            for(int i = 0; i<9; i++){
                 buttons[i].setEnabled(false);
             }
             textfield.setText("O wins");
